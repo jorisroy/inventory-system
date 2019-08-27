@@ -5,3 +5,15 @@ html, body {
 
   height: 100%;
 }
+@import "./app/bootstrap/bootstrap";
+
+.container-fluid {
+  padding: 0;
+  height: 100% ;
+}
+
+.navigation {
+  height: 100vh;
+  position: fixed;
+  background-color: lightblue;
+}

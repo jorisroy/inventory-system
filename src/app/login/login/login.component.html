@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+        <div class="col-sm-6">
+            <div class="card">
+
+            
+                <form class="form card-body" [formGroup]="registerForm">
+                    <div class="form-group row">
+                        <label for="email" class="form-label col-md-4">{{ 'FORM.LABEL.EMAIL' | translate }}</label>
+                        <div class="col-md-8">
+                            <input id="email" type="text" class="form-control" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                        </div>
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                <div *ngIf="f.email.errors.required">email is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="form-label col-md-4">{{ 'FORM.LABEL.PASSWORD' | translate }}</label>
+                        <div class="col-md-8">
+                            <input id="password" type="password" class="form-control" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                        </div>
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                <div *ngIf="f.password.errors.required">password is required</div>
+                            </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                        <button type="submit" class="btn btn-primary" (click)="submit()">{{ 'FORM.BUTTON.SEND' | translate}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

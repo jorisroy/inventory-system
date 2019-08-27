@@ -2,6 +2,21 @@
   "PAGES": {
       "HOME": {
           "TITLE": "App works !"
+      },
+      "NAV": {
+          "ADD-PRODUCT": "Add product"
       }
+  },
+  "FORM": {
+    "LABEL": {
+      "NAME": "name: ",
+      "CATEGORY": "category: ",
+      "USERNAME": "username: ",
+      "PASSWORD": "password: ",
+      "EMAIL": "email: "
+    },
+    "BUTTON": {
+      "SEND": "send"
+    }
   }
 }
