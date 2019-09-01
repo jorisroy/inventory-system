@@ -1,19 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
+@import "./app/bootstrap/bootstrap";
+
+$background-color: #292930;
+$darkBlue-text: #396afc;
+$standard-label-text: #eae9ef;
+$blueGrad-high: #2948ff;
+$blueGrad-low: #396afc;
+
+$font-size-medium: 18px;
+html,
+body {
   margin: 0;
   padding: 0;
-
+  background-color: $background-color;
   height: 100%;
+  font: Italic 24px/32px Segoe UI;
 }
-@import "./app/bootstrap/bootstrap";
+p {
+  margin: 0;
+}
 
 .container-fluid {
   padding: 0;
-  height: 100% ;
+  height: 100%;
 }
 
 .navigation {
   height: 100vh;
   position: fixed;
   background-color: lightblue;
+}
+
+.custom-input {
+  &-label {
+    text-align: left;
+    letter-spacing: 0;
+    width: 400px;
+    color: $standard-label-text;
+    font: Italic 24px/32px Segoe UI;
+    &::placeholder {
+      color: $standard-label-text;
+    }
+    &:focus {
+      background: transparent;
+      color: $standard-label-text;
+    }
+  }
+  background-color: transparent;
+  border: 0;
+}
+
+.underline {
+  border: 0.5px solid $standard-label-text;
+  margin-bottom: 32.5px;
+  width: 400px;
+}
+
+.logo {
+  width: 109px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 32.5px;
+  background: transparent url("./assets/Exclusion\ 1.svg") 0% 0% no-repeat
+    padding-box;
+}
+
+.button {
+  background: transparent linear-gradient(90deg, #396afc 0%, #2948ff 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 19px 14px 6px #222228;
+  opacity: 1;
+  transform: skew(-20deg);
+  border: 0;
+  &-size {
+    &-main {
+      width: 380px;
+    }
+  }
+  &-text {
+    transform: skew(20deg);
+    font: Bold Italic 18px/24px Segoe UI;
+    letter-spacing: 0;
+    color: #eae9ef;
+    padding: 10px;
+  }
+}
+
+.register {
+  display: inline-block;
+
+  &-text {
+    display: inline;
+    text-align: left;
+    font: Italic 16px/21px Segoe UI;
+    letter-spacing: 0;
+    color: $standard-label-text;
+  }
+  &-link {
+    display: inline;
+    color: $darkBlue-text;
+    font: Bold 16px/21px Segoe UI;
+  }
 }

@@ -1,22 +1,27 @@
 {
   "PAGES": {
-      "HOME": {
-          "TITLE": "App works !"
-      },
-      "NAV": {
-          "ADD-PRODUCT": "Add product"
-      }
+    "HOME": {
+      "TITLE": "App works !"
+    },
+    "NAV": {
+      "ADD-PRODUCT": "Add product"
+    },
+    "LOGIN": {
+      "NEW-COMPANY": "Are you a new company?",
+      "SIGN-UP": "SIGN UP"
+    }
   },
   "FORM": {
     "LABEL": {
       "NAME": "name: ",
       "CATEGORY": "category: ",
       "USERNAME": "username: ",
-      "PASSWORD": "password: ",
-      "EMAIL": "email: "
+      "PASSWORD": "Password",
+      "EMAIL": "Email"
     },
     "BUTTON": {
-      "SEND": "send"
+      "SEND": "send",
+      "LOGIN": "GO"
     }
   }
 }
