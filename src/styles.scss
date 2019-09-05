@@ -102,3 +102,10 @@ p {
     font: Bold 16px/21px Segoe UI;
   }
 }
+
+.text {
+  &-error {
+    color: red;
+    font: Bold Italic 24px/26px Segoe UI;
+  }
+}
